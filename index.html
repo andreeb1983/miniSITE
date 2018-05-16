@@ -9,29 +9,43 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- début de la div principale -->
-        <div>
+        <!-- début de la div principale --> 
+        <div id="wrapper">               
             <!-- en-tête de la page ou d'une section -->
             <header class="fond_vert"><h1>En-tête de la page ou d'une section</h1>                          
             <p>Avec un peu de texte</p>
             <p>Avec un peu de texte dans un autre paragraphe</p>
-            </header>
-            <!-- la navigation de la page -->
-            <nav class="fond_rouge">La navigation
-            <ul>
-                <li>Menu01</li>
-                <li>Menu02</li>
-                <li>Menu03</li>
-                <li>Menu04</li>
-            </ul>
-            </nav>
-            <!-- du contenu textuel -->
-            <article class="fond_orange">Contenu textuel</article>
-            <!-- pour une division sur le côté de la page -->
-            <aside class="fond_gris">Le côté de la page</aside>                       
+            </header>            
+             <aside class="fond_gris"> <!-- pour une division sur le côté de la page -->
+                <h2>Bienvenue</h2><!-- la navigation de la page -->
+            <nav class="fond_rouge">
+                <h2> La navigation</h2>  
+                <ul>
+                    <li>menu # 01</li>
+                    <li>menu # 02</li>
+                    <li>menu # 03</li>
+                    <li>menu # 04</li>
+                    <li>menu # 05</li>
+                    <li>menu # 06</li>
+                    <li>menu # 07</li>
+                    <li>menu # 08</li>
+                </ul>
+                </nav>
+            </aside>                       
+            <div id="main">  <!-- contenu principal  -->
+              
+            <article class="fond_orange">  <!-- un article avec son h2 -->
+                <h2>Titre d'un article</h2>
+                <p class="fond_gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto magnam quam assumenda ipsum iusto, est, enim, perspiciatis et officiis tempora qui maxime obcaecati nemo id. Sequi expedita sunt nostrum!</p>             
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi facilis pariatur soluta iure ratione in aliquam exercitationem unde iusto praesentium, quis impedit quae doloremque voluptates? Rerum ex illum necessitatibus.</p>
+                <p class="fond_gris">je suis <span class="fond_rouge"> moi</span></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt vitae cupiditate eaque maxime esse id explicabo vel qui deserunt doloremque voluptates quidem reprehenderit dolore natus, voluptatum consequuntur. Obcaecati, ducimus.</p>
+            </article>
+            </div><!-- fermeture de la div main -->
+           <div class="clear"></div>
             <!-- le pied de page -->
-            <footer class="fond_bleu">Pied de page</footer>
-        </div>
+            <footer class="fond_bleu">Pied de page</footer>           
+        </div>  <!-- fermeture wrapper -->
     </body>
 </html>
 
