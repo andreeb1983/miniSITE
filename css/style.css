@@ -28,6 +28,7 @@ body  {
 }
 /* l'emballage de toute la page */
 #wrapper { 
+    background-color: lightgrey;
     width: 1000px;
     margin-top: 20px;
     margin-right: auto;
@@ -35,7 +36,8 @@ body  {
 }  
 /* le hautde page  */
 header {
-    height: 236px;
+    background: url(../img/panorama.jpg) center top no-repeat;
+    height: 420px;
     /* hauteur de l'élément */
     border: 2px solid brown;
 }
@@ -43,13 +45,15 @@ header {
 /* le côté de la page */
 aside {
     width: 280px;
-    float: left;   
+    float: left;
+    padding: 10px;     
     
 }
 /* le contenu principal */
 #main {
-    width: 700px;
+    width: 680px;
     float: right;
+    padding: 10px;
 }
 /* la classe pour tout remettre dans le flux normal */
 .clear{
