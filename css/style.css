@@ -105,3 +105,26 @@ input, textarea, select {
 select {
     margin-top: 5px;
 }
+/* le tableau */
+table {
+    border-collapse: collapse; /* fusionne toutes les bordures stylées ci-après */
+}
+table, th, td, caption {
+    border: 2px solid whitesmoke;
+}
+th,td {
+    padding: 8px;
+}
+tr:hover { /* une pseudo classe: hover au passage de la souris */
+    background-color: lightskyblue;
+}
+caption, th, tfoot {
+    text-align: left;
+    background-color: red;
+    color: whitesmoke;
+    padding: 8px;    
+}
+caption {
+    caption-side: top;
+    text-transform: uppercase;
+}
