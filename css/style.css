@@ -64,3 +64,44 @@ footer{
     height: 236px;
     border: 2px solid purple;  
 }
+
+/* le formulaire sur le CSS */
+form {
+    background: whitesmoke; 
+    padding: 10px;
+    width: 80%;
+
+}
+fieldset {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px dashed solid rebeccapurple;
+    width: 80%;
+}
+legend {
+    font-weight: 800;
+    color: rebeccapurple;
+    
+}
+label {
+    background-color:orangered;
+    color: white;
+    margin-top: 10px;
+    /* display: block permet d'aller à la ligne automatiquement */
+    display: block;
+    width: 300px;
+}
+label.inline {
+    /* tous les labels qui ont la classe .inline */
+    display:inline;
+    margin-right: 50px;
+}
+input, textarea, select {
+    /* pour styler plusieurs éléments et leur donner des attributs communs */
+    border: 1px solid rebeccapurple;
+    padding: 3px;
+    box-shadow: 1px 1px 2px grey;
+}
+select {
+    margin-top: 5px;
+}
