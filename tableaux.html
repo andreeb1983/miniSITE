@@ -30,76 +30,75 @@
 							  	<li><a href="photos.html" title="MiniSITE: des photos">Photos</a></li>
 							  	<li><a href="textes.html" title="MiniSITE: des 	  textes">Texte</a></li>
 							  	<li><a href="formulaires.html" title="MiniSITE: un formulaire">Formulaire</a></li>      
-							  	<li><a href="#" title="">page # 06</a></li>
-							  	<li><a href="#" title="">page # 07</a></li>  
-							  	<li><a href="#" title="">page # 07</a></li> 
+							  	<li><a href="tableaux.html" title="MiniSite: Tableaux">Tableaux</a></li>
+							  	<li><a href="mignons.html" title="MiniSite: Mignons"></a>Mignons</li>  
+							  	<li><a href="formulaires.html" title="">page # 07</a></li> 
 							  	<li><a href="#" title="">page # 07</a></li>                
 								</ul>
 						</nav>
 			</aside>                       
 		<div id="main" class="fond_orange">                
 			<h2>Mon premier tableau</h2>
-
 				<table>	
 					<caption>la liste des salariés de Pantin</caption>					
-						<thead> <!-- thead une rangée en tête de colonne -->
-							<tr>											
-								<th>Noms</th> <!-- th table head une cellule d'en_tête de colonne -->
-								<th>Prénoms</th>
-								<th>Courriels</th>
-								<th>Tél.</th>
-							</tr>
-								</thead>
-									<tfoot>
+					<thead> <!-- thead une rangée en tête de colonne -->
+						<tr>											
+							<th>Noms</th> <!-- th table head une cellule d'en_tête de colonne -->
+							<th>Prénoms</th>
+							<th>Courriels</th>
+							<th>Tél.</th>
+						</tr>
+							</thead>
+								<tfoot>
+									<tr>
+										<th>Noms</th>
+										<th>Prénoms</th>
+										<th>Courriels</th>
+										<th>Tél.</th>
+										</tr>
+									</tfoot>
+									<tbody> <!-- tbody le corps du tableau -->
+										<tr class="fond_gris">												
+											<td>Baptiste</td><!-- td table data une cellule de tableau -->
+											<td>Andrée</td>
+											<td>andree.baptiste@lepoles.com</td>
+											<td></td>
+										</tr>
 										<tr>
-											<th>Noms</th>
-											<th>Prénoms</th>
-											<th>Courriels</th>
-											<th>Tél.</th>
-											</tr>
-										</tfoot>
-										<tbody> <!-- tbody le corps du tableau -->
-											<tr class="fond_gris">												
-												<td>Baptiste</td><!-- td table data une cellule de tableau -->
-												<td>Andrée</td>
-												<td>andree.baptiste@lepoles.com</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td>Domoison</td>
-												<td>Fabrice</td>
-												<td>fabrice.domoison@lepoles.com</td>
-												<td></td>
-											</tr>
-											<tr class="fond_gris">
-												<td>Poujaud-melot</td>
-												<td>Lesly</td>
-												<td>lesly.poujaud-melot@lepoles.com</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td>Aslan</td>
-												<td>Kilic</td>
-												<td>kilic.aslan@lepoles.com</td>
-												<td></td>
-											</tr>
-											<tr class="fond_gris">
-												<td>Poujaud-Melot</td>
-												<td>Lesly</td>
-												<td>lesly.poujaud-melot@lepoles.com</td>
-												<td>06 45 39 92 92</td>
-											</tr>
-											<tr>
-												<td>Louchnikova</td>
-												<td>Marina</td>
-												<td>marina.louchnikova@lepoles.com</td>
-												<td>06 15 36 03 11</td>
-											</tr>
-											<tr class="fond_gris">
-												<td>Yessad</td>
-												<td>Mohamed</td>
-												<td>mohamed.yessad@lepoles.com</td>
-												<td>06 67 80 55 98</td>
+											<td>Domoison</td>
+											<td>Fabrice</td>
+											<td>fabrice.domoison@lepoles.com</td>
+											<td></td>
+										</tr>
+										<tr class="fond_gris">
+											<td>Poujaud-melot</td>
+											<td>Lesly</td>
+											<td>lesly.poujaud-melot@lepoles.com</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Aslan</td>
+											<td>Kilic</td>
+											<td>kilic.aslan@lepoles.com</td>
+											<td></td>
+										</tr>
+										<tr class="fond_gris">
+											<td>Poujaud-Melot</td>
+											<td>Lesly</td>
+											<td>lesly.poujaud-melot@lepoles.com</td>
+											<td>06 45 39 92 92</td>
+										</tr>
+										<tr>
+											<td>Louchnikova</td>
+											<td>Marina</td>
+											<td>marina.louchnikova@lepoles.com</td>
+											<td>06 15 36 03 11</td>
+										</tr>
+										<tr class="fond_gris">
+											<td>Yessad</td>
+											<td>Mohamed</td>
+											<td>mohamed.yessad@lepoles.com</td>
+											<td>06 67 80 55 98</td>
 											</tr>
 											<tr >
 												<td>Mbaye</td>
@@ -126,6 +125,39 @@
 													<td>01 48 46 59 48</td>
 											</tr>								
 										</tbody>
+				</table>
+				<hr>
+				<h2> Un tableau avec des cellules fusionnées</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Mois</th>
+							<th>Dépenses ordinaires</th>
+							<th>Sorties</th>
+
+						</tr>
+					</thead>
+					<tbody>	
+						<tr>
+							<td>Janvier</td>
+							<td>250 €</td>
+							<td>10 €</td>
+						</tr>					
+						<tr class="fond_gris">
+							<td>Février</td>
+							<td>20 €</td>
+							<td>10 €</td>
+						</tr>
+						<tr>
+							<td>Mars</td>
+							<td>20€</td>
+							<td>10 €</td>
+						</tr>
+						<tr class="fond_gris">
+							<td colspan="3">Total : 320€</td> <!-- pour fusionner 2 cellules -->
+						</tr>					
+
+					</tbody>
 				</table>
 
 		</div><!-- fermeture de la div main -->
