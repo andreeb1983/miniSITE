@@ -1,10 +1,7 @@
 @charset "utf-8";
 /* CSS document */
-
 /* ma première feuille de style externe */
-
 /* des styles simples pour des fonds de couleur */
-
 .fond_orange {
     background: orangered;
 }
@@ -23,35 +20,34 @@
 /* les styles de la page */
 body  {
     margin: auto; /* margin c'est la marge extérieur d'un élément */
-    background-color: blueviolet;
+   /*  background-color: blueviolet; */
+   background: linear-gradient(rgb(214, 185, 17),rgb(165, 82, 52));
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* l'emballage de toute la page */
 #wrapper { 
     background-color: lightgrey;
-    width: 1000px;
+    width: 1200px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
 }  
 /* le hautde page  */
-header {
-    background: url(../img/panorama.jpg) center top no-repeat;
-    height: 420px;
+header {/* background: url(../img/panorama.jpg) center top no-repeat; */
+    background: url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightskyblue, white);
+    height: 406px;
     /* hauteur de l'élément */
     border: 2px solid brown;
 }
-
 /* le côté de la page */
 aside {
     width: 280px;
     float: left;
-    padding: 10px;     
-    
+    padding: 10px;    
 }
 /* le contenu principal */
 #main {
-    width: 680px;
+    width: 880px;
     float: right;
     padding: 10px;
 }
@@ -61,16 +57,15 @@ aside {
 }
 /* le pied de page */
 footer{
-    height: 236px;
-    border: 2px solid purple;  
+    height: 120px;
+    border: 2px solid purple;
+    margin-bottom: 10px;  
 }
-
 /* le formulaire sur le CSS */
 form {
     background: whitesmoke; 
     padding: 10px;
     width: 80%;
-
 }
 fieldset {
     padding: 20px;
@@ -81,7 +76,6 @@ fieldset {
 legend {
     font-weight: 800;
     color: rebeccapurple;
-    
 }
 label {
     background-color:orangered;
@@ -127,4 +121,14 @@ caption, th, tfoot {
 caption {
     caption-side: top;
     text-transform: uppercase;
+}
+/* différents styles de bordures */
+
+.filetgauche {/* un filet à gauche du bloc */
+    border-left: 6px solid blue
+}
+.cartouche{/* un essai de bordure avec des coins arrondis */
+border: 2px solid orange;
+border-radius: 40px;
+padding: 25px;
 }
