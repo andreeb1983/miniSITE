@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS document */
+body {
+/* margin: 0 auto; */
+background-color: antiquewhite;
+}
+/* pour alterner les couleurs des div */
+.vert {
+    background-color: green;
+}
+.aqua {
+    background-color: aqua;
+}
+.vertclair {
+    background-color:lightgreen ;
+}
+.saumon {
+    background-color: salmon;
+}
+.rouge {
+    background-color: red;
+}
+.blanc {
+    height: 10em;
+    width: 10em;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+/* les styles communs aux div de la page */
+.c1, .c2 , .c3, .c4, .vide {
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.2em solid black;
+    margin: 5px;
+    /* border-radius: 20%; */
+   
+    text-align: center;
+    color: black;
+}
+.c1 {
+    border-radius: 5% 10% 20% 40% ;
+}
+.c2 {
+    border-radius: 40% 0% 40% 0% ;
+}
+.c3 {
+    border-radius: 50% 50% 50% 50% ;
+}
+.c4 {
+    border-radius:  20% 40% 20% 40% ;
+}
+.clear {
+    clear: both;
+}
