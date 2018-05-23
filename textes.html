@@ -7,6 +7,23 @@
         <title>miniSITE : texte</title>
         <!-- la feuille de style externe    -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        
+        /* les pseudos class et :first-child */
+           article li:first-child {
+                background: lightblue;
+            } 
+            /* ici je cible le li 6ème enfant de article */
+            article li:nth-child(4) {
+                background: blue;
+                color: aliceblue;
+            }
+            /* là je cible dans la div id :nth-child tous les deux enfants */
+            #nchild li:nth-child(2n) {
+                background: #000;
+                color: #fff;
+            }
+        </style>
     </head>
     <body>
         <!-- début de la div principale --> 
@@ -52,6 +69,42 @@
 
                 </p>
                 </article>
+                <h3> Une astuce avec un hover</h3>
+                    <div id="survol">
+                        Survoler cette ligne pour me faire apparaître.
+                        <p>Coucou je suis là !</p>
+                    </div>
+                <article>
+                    <h1> Une liste de choses à faire</h1>
+                    <ul>
+                        <li>ranger des papiers</li>
+                        <li>faire le dîner</li>
+                        <li>regarder ma série</li>
+                        <li>regarder mon courrier</li>
+                        <li>lire mes mails</li>
+                    </ul>
+                </article>
+                <article>
+                        <h1> Ce que je fais, dans l'ordre quand j'arrive au boulot</h1>
+                        <ol>
+                            <li>dire bonjour</li>
+                            <li>ranger mon repas au réfrigérateur</li>
+                            <li>allumer l'ordinateur</li>
+                            <li>faire un thé</li>
+                            <li>sortir mes notes</li>
+                        </ol>
+                    </article>
+                    <article id="nchild">
+                            <h1> Une liste de choses à faire</h1>
+                            <ul>
+                                <li>ranger des papiers</li>
+                                <li>faire le dîner</li>
+                                <li>regarder ma série</li>
+                                <li>regarder mon courrier</li>
+                                <li>lire mes mails</li>
+                            </ul>
+                        </article>
+                        
             </div><!-- fermeture de la div main -->
            <div class="clear"></div>
             <!-- le pied de page -->

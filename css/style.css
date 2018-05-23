@@ -39,11 +39,50 @@ header {/* background: url(../img/panorama.jpg) center top no-repeat; */
     /* hauteur de l'élément */
     border: 2px solid brown;
 }
+header h1 {
+    background-color: white;
+    text-transform: uppercase;
+    width: 20%;
+    text-align: center;   
+    margin-left: 10%;
+}
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+header h1 a:hover {
+    text-decoration: underline;background-color: #333;
+    color: white;
+}
 /* le côté de la page */
 aside {
     width: 280px;
     float: left;
     padding: 10px;    
+}
+/* les liens ne sont pas soulignés par défaut */
+nav a {
+    text-decoration: none;
+}
+/* la navigation et les styles des liens */
+/* les pseudos class */
+/* quand le lien n'est pas visité */
+nav a:link {
+    color: orangered;
+}
+ /* quand le lien a été visité */
+nav a:visited {
+     color: lightseagreen;
+}
+/* au survol de la souris */
+nav a:hover {
+    color: white;
+    /* background: orange; */
+    text-decoration: underline;
+}
+nav ul li {
+    list-style-type: none;
+    /* list-style-image: url('../img/globe_fleche.png'); */
 }
 /* le contenu principal */
 #main {
@@ -131,4 +170,13 @@ caption {
 border: 2px solid orange;
 border-radius: 40px;
 padding: 25px;
+}
+/* ici pour l'astuce au survol dans la page texte */
+#survol p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+#survol:hover p {
+    display: block;
 }

@@ -8,6 +8,12 @@
 		<title>miniSITE : tableaux</title>
 		<!-- la feuille de style externe    -->
 		<link href="css/style.css" rel="stylesheet">
+		<style>
+			#nchild tr:nth-child(2n) {
+                background: lightgray;
+                color: black;
+            	}
+		</style>
 	</head>
 	
 	<body>
@@ -23,7 +29,7 @@
 			</header>            
 				<aside class="fond_gris"> <!-- pour une division sur le côté de la page -->
 					<h2>Bienvenue</h2><!-- la navigation de la page -->
-					<nav >
+					<nav>
 							<h2> La navigation</h2>  
 							<ul>
 								<li><a href="index.html" title="MiniSITE: accueil">Accueil</a></li>
@@ -62,7 +68,7 @@
 										<th>Tél.</th>
 										</tr>
 									</tfoot>
-									<tbody> <!-- tbody le corps du tableau -->
+									<tbody > <!-- tbody le corps du tableau -->
 										<tr class="fond_gris">												
 											<td>Baptiste</td><!-- td table data une cellule de tableau -->
 											<td>Andrée</td>
@@ -163,6 +169,51 @@
 						</tr>					
 
 					</tbody>
+					
+				</table>
+				<hr>
+				<h2> Un tableau avec nchild</h2>
+				<table id="nchild">
+					<tr>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+					</tr>
+					<tr>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+					</tr>
+					<tr>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+					</tr>
+					<tr>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+						<td>coucou</td>
+					</tr>
 				</table>
 
 		</div><!-- fermeture de la div main -->
