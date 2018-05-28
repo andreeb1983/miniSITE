@@ -2,13 +2,77 @@
 
 body{
     background:lemonchiffon;
+    font-family: sans-serif;/* sans-serif ou sans empattements ou typo "bâton" */
+    font-size: 1.3em;
 }
+/* h2 {
+    font-size: 1.6em; */
+}
+/* les couleurs de fond pour voir les div */
 .couleur_une {
     background: lightpink;
 }
 .couleur_deux {
     background: lightsteelblue;
 }
+.clear {
+    clear: both;
+}
 .change {
-    border: thin solid white;
+    /* border: thin solid white; */
+}
+/* changement des ul en tableaux */
+ul {
+    list-style: none; /* suppression des puces des listes */
+    float: left;/* effet flottant à gauche */
+    margin: 0;/* marge extérieur */
+    padding: 0;/* marge intérieur */
+}
+/* une marge por les 2 class gauche et droite */
+.gauche, .droite {
+    margin-top: 5em;
+}
+/* pour faire la 1ère colonne du tableau */
+/* la ul qui est dans la div.gauche */
+.gauche ul {
+    margin: 3.2em 0 0 0;
+}
+/* la li qui est dans la class .gauche */
+.gauche ul li{
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+
+}
+/* le 1er li de la ul ayant la class gauche */
+.gauche ul li:first-child {
+border-top: 1px solid #ccc;
+}
+/* fin de la 1ère colonne */
+/* 2nde colonne */
+ul.liste li { /* tous les li de la ul ayant la class .liste */
+/* background: lightblue; */
+border-left: 1px solid #ccc;
+}
+.droite .change ul li{ /* tous les li de la liste ul ayant la classe .change elle-même enfant de la class .droite */
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+.droite .change ul li:last-child {/* le dernier li de la ul ayant la class .change elle-même en fant de la class .droite */
+    border-bottom: 1px solid #ccc;
+}
+/*  effets de transitionau survol de la souris, animation CSS3*/
+.droite .change ul:hover {
+    background: linear-gradient(#d5d5d5, #8a8a8a);
+    cursor: pointer;/* changement de l'affichege du curseur */
+    transform: scale(1.1);/* échelle de zoom */
+    transition-duration: 1s;/* durée de leffet de transition */    
+}
+.droite .change ul:hover li:first-child{ /*  au survol de la souris on sélectionne le 1er li de ul ayant la class .change, elle-même enfant de la classe .droite */
+    background-color: #333;
+    color: white;
 }
