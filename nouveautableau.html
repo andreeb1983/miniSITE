@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device_width,initial-scale=1.0">
+		<meta http-equiv="X_UA-Compatible" content="ie-edge">
+        <title>Nouveau tableau</title>
+        
+        <style>
+body{
+    background: pink;
+}
+table {
+    background: white;
+}
+table, th, td {
+    border: 1px solid #333;
+    border-collapse: collapse;       
+}
+td, th {
+    padding: 10px;
+    text-align: left;
+    min-width: 200px;
+}
+th {
+    /* background: lightcyan; */
+    /* color: white; */
+}
+tr:hover {
+    background: lightskyblue
+}        
+</style>
+<head> 
+                <body>           
+                <table>
+
+                    <h1>Un tableau avec des row fusionnées</h1>
+                        <p>Lorem</p>   
+                                           
+                            <tr> <!-- une rangée de tableau -->											
+                            <th>Nom</th> <!-- td : une cellule de tableau -->
+                            <td>André Bourvil</td>                                  
+                            </tr>                                                            
+                            <tr>
+                                <th rowspan="2">Téléphone</th> <!-- fusion de cette rangée avec la rangée du dessous -->
+                                <td>Passy 07 12</td>
+                            </tr>
+                            <tr>                              
+                               <td>Camembert 78 55</td>
+                            </tr> 
+
+                
+
+
+
+
+        
+        </head>
+    </body>
